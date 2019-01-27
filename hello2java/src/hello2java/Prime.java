@@ -16,7 +16,7 @@ public class Prime {
 				total += num;
 			else
 				System.out.println(num+ " is Not Prime Number!! ");
-		}
+		} 
 		
 		
 		
