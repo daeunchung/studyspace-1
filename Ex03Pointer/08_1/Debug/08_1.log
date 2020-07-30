@@ -1,0 +1,5 @@
+﻿  Source.c
+c:\2020_c\ex03pointer\08_1\source.c(6): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+Debug\Source.obj : warning LNK4042: object specified more than once; extras ignored
+  08_1.vcxproj -> C:\2020_C\Ex03Pointer\Debug\08_1.exe
+  08_1.vcxproj -> C:\2020_C\Ex03Pointer\Debug\08_1.pdb (Full PDB)

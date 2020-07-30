@@ -1,0 +1,5 @@
+﻿  ex01.c
+c:\2020_c\ex01\ex01\ex01.c(92): warning C4474: 'printf' : too many arguments passed for format string
+  c:\2020_c\ex01\ex01\ex01.c(92): note: placeholders and their parameters expect 2 variadic arguments, but 3 were provided
+  Ex01.vcxproj -> C:\2020_C\Ex01\Debug\Ex01.exe
+  Ex01.vcxproj -> C:\2020_C\Ex01\Debug\Ex01.pdb (Full PDB)

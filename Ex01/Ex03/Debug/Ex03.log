@@ -1,0 +1,4 @@
+﻿  ex03.c
+c:\2020_c\ex01\ex03\ex03.c(183): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Ex03.vcxproj -> C:\2020_C\Ex01\Debug\Ex03.exe
+  Ex03.vcxproj -> C:\2020_C\Ex01\Debug\Ex03.pdb (Full PDB)

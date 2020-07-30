@@ -1,0 +1,4 @@
+﻿  ex05.c
+c:\2020_c\ex01\ex05\ex05.c(160): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Ex05.vcxproj -> C:\2020_C\Ex01\Debug\Ex05.exe
+  Ex05.vcxproj -> C:\2020_C\Ex01\Debug\Ex05.pdb (Full PDB)

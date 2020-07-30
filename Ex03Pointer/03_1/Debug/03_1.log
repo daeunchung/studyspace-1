@@ -1,0 +1,4 @@
+﻿  구구단.c
+c:\2020_c\ex03pointer\03_1\구구단.c(28): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+  03_1.vcxproj -> C:\2020_C\Ex03Pointer\Debug\03_1.exe
+  03_1.vcxproj -> C:\2020_C\Ex03Pointer\Debug\03_1.pdb (Full PDB)

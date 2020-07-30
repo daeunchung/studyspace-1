@@ -1,0 +1,4 @@
+﻿  Source2.c
+c:\2020_c\ex03pointer\07_2\source2.c(15): warning C4047: '=': 'int *' differs in levels of indirection from 'int **'
+  07_2.vcxproj -> C:\2020_C\Ex03Pointer\Debug\07_2.exe
+  07_2.vcxproj -> C:\2020_C\Ex03Pointer\Debug\07_2.pdb (Full PDB)

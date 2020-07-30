@@ -1,0 +1,4 @@
+﻿  mine.cpp
+c:\2020_c\datastructure\megait_stack_mine\mine.cpp(65): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  MEGAIT_Stack_Mine.vcxproj -> C:\2020_C\DataStructure\Debug\MEGAIT_Stack_Mine.exe
+  MEGAIT_Stack_Mine.vcxproj -> C:\2020_C\DataStructure\Debug\MEGAIT_Stack_Mine.pdb (Full PDB)

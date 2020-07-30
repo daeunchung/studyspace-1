@@ -1,0 +1,9 @@
+﻿  회원관리.cpp
+c:\2020_c\ex05stringfile\04_2\회원관리.cpp(59): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'char **'
+  c:\2020_c\ex05stringfile\04_2\회원관리.cpp(59): note: this argument is used by a conversion specifier
+c:\2020_c\ex05stringfile\04_2\회원관리.cpp(59): warning C4473: 'scanf_s' : not enough arguments passed for format string
+  c:\2020_c\ex05stringfile\04_2\회원관리.cpp(59): note: placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+  c:\2020_c\ex05stringfile\04_2\회원관리.cpp(59): note: the missing variadic argument 2 is required by format string '%s'
+  c:\2020_c\ex05stringfile\04_2\회원관리.cpp(59): note: this argument is used as a buffer size
+  04_2.vcxproj -> C:\2020_C\Ex05StringFile\Debug\04_2.exe
+  04_2.vcxproj -> C:\2020_C\Ex05StringFile\Debug\04_2.pdb (Full PDB)

@@ -1,0 +1,5 @@
+﻿  ex02.c
+c:\2020_c\ex01\ex02\ex02.c(112): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\2020_c\ex01\ex02\ex02.c(47): warning C4101: 'A': unreferenced local variable
+  Ex02.vcxproj -> C:\2020_C\Ex01\Debug\Ex02.exe
+  Ex02.vcxproj -> C:\2020_C\Ex01\Debug\Ex02.pdb (Full PDB)
