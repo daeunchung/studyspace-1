@@ -1,0 +1,3 @@
+﻿  Graph.cpp
+c:\2020_c\datastructure\megait_graph\graph.cpp(33): error C2059: syntax error: '}'
+c:\2020_c\datastructure\megait_graph\graph.cpp(33): error C2143: syntax error: missing ';' before '}'

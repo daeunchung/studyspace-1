@@ -1,0 +1,5 @@
+﻿  BalancedBinarySearchTree.c
+c:\2020_c\datastructure\kocw_balancedbinarysearchtree\balancedbinarysearchtree.c(112): warning C4033: 'Insert' must return a value
+c:\2020_c\datastructure\kocw_balancedbinarysearchtree\balancedbinarysearchtree.c(144): warning C4715: 'Insert': not all control paths return a value
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol _main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\2020_C\DataStructure\Debug\KOCW_BalancedBinarySearchTree.exe : fatal error LNK1120: 1 unresolved externals

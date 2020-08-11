@@ -9,7 +9,7 @@ struct Tree {
 	int count;
 	Node * root;
 };
-Tree * CreateTree(Tree * tree);
+Tree * CreateTree();
 void AddKey(Tree * tree, int key);
 void PrintTree(Tree * tree);
 void PrintNode(Node *node);
@@ -17,7 +17,7 @@ int FindKey(Tree * tree, int key);
 void DeleteKey(Tree * tree, int key);
 int KeyCheck(Tree* tree, int key);
 
-Tree * CreateTree(Tree * tree) {
+Tree * CreateTree() {
 	Tree * tree = new Tree();
 	memset(tree, 0, sizeof(Tree));
 	return tree;
@@ -46,7 +46,7 @@ void AddKey(Tree * tree, int key) {
 			}
 			cur = cur->left;
 		}
-		if (cur->key > key) {
+		if (cur->key < key) {
 			if (cur->right == 0) {
 				cur->right = node;
 				return;
@@ -70,7 +70,7 @@ int FindKey(Tree * tree, int key) {
 	while (1) {
 		if (cur->key == key) {
 			result = 1;
-			return result;
+			return result; 
 		}
 		if (cur->key > key) {
 			if (cur->left == 0)
@@ -102,21 +102,76 @@ void DeleteKey(Tree * tree, int key) {
 			cur = cur->left;
 		}
 	} 
+
 	//while문 나왔으니까 cur->key == key 라는 뜻
 	printf("삭제 값 : %d\n", cur->key);
 
 	// 좌에도 노드 X 우에도 노드 X :  key 값 가진 노드가 Leaf Node 일때
 	if (cur->left == 0 && cur->right == 0) {
-
+		if (cur == tree->root) tree->root = 0;
+		else if (par->left == cur) par->left = 0;
+		else if (par->right == cur) par->right= 0;
+		delete cur;
 	}
 	// 좌가 있고 우가 없던지, 좌가 없고 우가 있던지 (else if이기때문에 둘다 있는거는 이미 걸러져서 다시 안돈다)
 	else if (cur->left == 0 || cur->right == 0) {
+		if (cur == tree->root) {
+			if (cur->left != 0) par->left = cur->left;
+			if (cur->right!= 0) par->right = cur->right;
+		}
+		else if (par->left == cur) {
+			if (cur->left != 0) par->left = cur->left;
+			if (cur->right != 0) par->left = cur->right;
+		}
+		else if (par->right == cur) {
+			if (cur->left != 0) par->right = cur->left;
+			if (cur->right != 0) par->right = cur->right;
+		}
+		delete cur;
 	}
 
 	// 좌에도 노드 O 우에도 노드 O 
 	else if (cur->left != 0 && cur->right != 0) {
 
+		// 무조건 한번만 왼쪽으로 꺾고 ( 왜냐하면 왼쪽 놈중에 가장 큰놈을 cur 과 바꿔줄꺼기 때문에)
+		Node * par2 = cur;
+		Node * cur2 = cur->left;
 
+		// 교체할 노드 찾기 ( 무조건 가장 오른쪽 놈을 찾아준다)
+		while (cur2->right != 0) {
+			par2 = cur2;
+			cur2 = cur2->right;
+		}
+		printf("교체할 키 : %d\n", cur2->key);
+
+		if (cur2->left != 0) {
+			if (par2->left == cur2) {
+				par2->left = cur2->left;
+				printf("1. par2 : %d\n", par2->key);
+				printf("1. cur2 : %d\n", cur2->key);
+			}
+			else if (par2->right == cur2) {
+				par2->right = cur2->left;
+				printf("2. par2 : %d\n", par2->key);
+				printf("2. cur2 : %d\n", cur2->key);
+			}
+		}
+		else if (cur2->left == 0) {
+			if (par2->left == cur2) {
+				par2->left = 0;
+				printf("3. par2 : %d\n", par2->key);
+				printf("3. cur2 : %d\n", cur2->key);
+			}
+			else if (par2->right == cur2) {
+				par2->right = 0;
+				printf("4. par2 : %d\n", par2->key);
+				printf("4. cur2 : %d\n", cur2->key);
+			}
+		}
+		cur->key = cur2->key;
+		cur = cur2;
+		delete cur;
+	}
 
 }
 
