@@ -18,7 +18,7 @@ struct Stack
 	int count; Node* top;
 };
 
-Stack * create_Stack();
+Stack * create_stack();
 void push(Stack * stack, Check data);
 Node * pop(Stack * stack);
 Node * peek(Stack * stack);
