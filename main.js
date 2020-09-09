@@ -1,42 +1,14 @@
 /********** 동적인 웹페이지 만들기 ***********/
+// query string 값에 따라서 본문이 변경되는 웹 애플리케이션 만들기  => query string에 따라 다르게 동작하는 nodejs application 만들기
 
 var http = require('http');     // 프로토콜
 var fs = require('fs');         // file system
 var url = require('url');
 var qs = require('querystring');
+var path = require('path');
 
 // REFACTORING
-var template = {
-  HTML:function(title, list, body, control){
-    return `
-    <!doctype html>
-    <html>
-    <head>
-      <title>WEB1 - ${title}</title>
-      <meta charset="utf-8">
-    </head>
-    <body>
-      <h1><a href="/">WEB</a></h1>
-      ${list}
-      ${control}
-      ${body}
-    </body>
-    </html>
-    `;
-  },
-  list:function(filelist) {
-    var list = '<ul>';
-    var i = 0;
-    while(i < filelist.length){
-      list = list + `<li><a href="/?id=${filelist[i]}">${filelist[i]}</a></li>`;
-      i++;
-    }
-    list = list + '</ul>';
-    return list;
-  }
-}
-
-// query string 값에 따라서 본문이 변경되는 웹 애플리케이션 만들기  => query string에 따라 다르게 동작하는 nodejs application 만들기
+var template = require('./lib/template.js');
 
 // nodejs로 웹브라우저가 접속이 들어올 때마다 nodejs가 createServer에 콜백함수를 호출
 var app = http.createServer(function(request,response){
@@ -60,7 +32,8 @@ var app = http.createServer(function(request,response){
           });
         }else{                                  // localhost:3000/?id=SOMETHING 인 경우
           fs.readdir('./data', function(error, filelist) {
-            fs.readFile(`data/${queryData.id}`, 'utf8', function(err, description) {  // 원래는 function(err, data)받는데 어짜피 받은 data 본문에 넣어줄꺼라서 미리 description(본문)으로 받은 것
+            var filteredId = path.parse(queryData.id).base;
+            fs.readFile(`data/${filteredId}`, 'utf8', function(err, description) {  // 원래는 function(err, data)받는데 어짜피 받은 data 본문에 넣어줄꺼라서 미리 description(본문)으로 받은 것
             var title = queryData.id;
             var list = template.list(filelist);
             var html = template.HTML(title, list,
@@ -121,7 +94,8 @@ var app = http.createServer(function(request,response){
     }
     else if(pathname ==='/update'){
       fs.readdir('./data', function(error, filelist) {
-        fs.readFile(`data/${queryData.id}`, 'utf8', function(err, description) {  // 원래는 function(err, data)받는데 어짜피 받은 data 본문에 넣어줄꺼라서 미리 description(본문)으로 받은 것
+        var filteredId = path.parse(queryData.id).base;
+        fs.readFile(`data/${filteredId}`, 'utf8', function(err, description) {  // 원래는 function(err, data)받는데 어짜피 받은 data 본문에 넣어줄꺼라서 미리 description(본문)으로 받은 것
         var title = queryData.id;
         var list = template.list(filelist);
         var html = template.HTML(title, list,
@@ -171,7 +145,8 @@ var app = http.createServer(function(request,response){
       request.on('end', function() {
         var post = qs.parse(body);
         var id = post.id;
-        fs.unlink(`data/${id}`, function(error){
+        var filteredId = path.parse(id).base;
+        fs.unlink(`data/${filteredId}`, function(error){
           response.writeHead(302, {Location: `/`});
           response.end();
         })
