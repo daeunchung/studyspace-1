@@ -63,7 +63,20 @@ location.href = 'https://opentutorials.org/course/1';
 
 
  목적 2) npm을 통해서 내가 아닌 다른 사람이 만든 모듈을 사용해서 application 빠르게 만드는 법
+ cmd 창에서 npm init
+ npm install -S sanitize-html   ( -S : static : 이 폴더 안에서만 지역적으로, -g : global : 내 컴퓨터 전체에)
 
+ var sanitizeHtml = require('sanitize-html'); => 미리 약속된 대로 node_modules\sanitize-html에서 파일 탐색
+ 이름 붙여진 모튤(sanitizeHtml)을 ${} js로 받으면 사용자가 해놓은 설정에 따라서
+ sanitize 할 태그 + 내용 , 태그만 sanitize하고 내용은 유지할 태그 , 태그도 내용도 놔둘 태그 .... 등 설정 가능
 
-
+ 방법 2 예시)   sanitizeHtml(dirtyHtml, allowedTags and Attributes로 이루어진 {객.체.})
+ // Allow only a super restricted set of tags and attributes
+clean = sanitizeHtml(dirty, {
+  allowedTags: [ 'b', 'i', 'em', 'strong', 'a' ],
+  allowedAttributes: {
+    'a': [ 'href' ]
+  },
+  allowedIframeHostnames: ['www.youtube.com']
+});
 */
