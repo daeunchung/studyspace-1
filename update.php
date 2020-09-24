@@ -17,8 +17,6 @@ $article = array(   // index값이 숫자가 아니고 문자인 배열 : 연관
     'description'=>'Hello, web'
 );
 
-$update_link = '';
-$delete_link = '';
 // 글 제목, 본문 출력
 if(isset($_GET['id'])){
     // mysqli_real_escape_string : SQL Injection 막는 함수
@@ -28,14 +26,6 @@ if(isset($_GET['id'])){
     $row = mysqli_fetch_array($result);
     $article['title'] = htmlspecialchars($row['title']);
     $article['description'] = htmlspecialchars($row['description']);
-
-    $update_link = '<a href ="update.php?id='.$_GET['id'].'">update</a>';
-    $delete_link = '
-    <form action="process_delete.php" method="post">
-      <input type="hidden" name="id" value="'.$_GET['id'].'">
-      <input type="submit" value="delete">
-    </form>
-  ';
 }
 // print_r($article);
 
@@ -51,10 +41,12 @@ if(isset($_GET['id'])){
     <ol>
         <?=$list?>
     </ol>
-    <a href="create.php">create</a>
-    <?=$update_link?>
-    <?=$delete_link?>
-    <h2><?=$article['title']?></h2>
-    <?=$article['description']?>
+    <form action="process_update.php" method="POST">
+      <input type="hidden" name="id" value="<?=$_GET['id']?>">
+      <p><input type="text" name="title" placeholder="title"
+      value="<?=$article['title']?>"></p>
+      <p><textarea name="description" placeholder="description"><?=$article['description']?></textarea></p>
+      <p><input type="submit"></p>
+    </form>
   </body>
 </html>
