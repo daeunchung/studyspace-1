@@ -1,0 +1,22 @@
+response 객체의 메소드
+writeHead(statusCode, object) : 응답 헤더 작성 
+end([data], [encoding]) : 응답 본문 작성 
+
+응답헤더에는 MIME 형식이 들어감
+이외에도 더 많은 MIME 형식이 존재
+    Content-Type : 설명 
+    text/plain : 기본적인 텍스트 
+    text/html : HTML 
+    text/css : CSS 
+    text/xml : XML 
+    image/jpeg : JPG/JPEG 
+    image/png : PNG 
+    video/mpeg : MPEG 비디오파일 
+    audio/mp3 : MP3 
+
+HTTP Status Code
+1XX 처리 중 100 Continue 
+2XX 성공 200 OK 
+3XX 리다이렉트 300 Multiple Choices 
+4XX 클라이언트 오류 400 Bad Request 
+5XX 서버 오류 500 Internal Server Error 

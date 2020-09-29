@@ -1,0 +1,12 @@
+- server 객체의 메소드 
+listen(port [, callback]) : 서버 실행 
+close() : 서버 종료 
+
+
+- server 객체의 이벤트 
+request : 클라이언트가 요청할 때 발생 
+connection : 클라이언트가 접속할 때 발생 
+close : 서버가 종료될 때 발생 
+checkContinue : 클라이언트가 연결을 지속하고 있을 때 발생 
+upgrade : 클라이언트가 HTTP 업그레이드를 요청할 때 발생 
+clientError : 클라이언트에서 오류가 발생할 때 발생 
