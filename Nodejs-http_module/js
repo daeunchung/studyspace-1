@@ -1,0 +1,16 @@
+// server.on('request', function(){
+//   console.log("request on");
+// })
+// server.on('connection', function(){
+//   console.log("connection on");
+// })
+// server.on('close', function(){
+//   console.log("close on");
+// })
+
+// 5초후 서버 종료, 그리고 프로그램 종료
+// setInterval(function(){
+//   server.close();
+//   console.log('server closed');
+//   process.exit();
+// }, 5000);
