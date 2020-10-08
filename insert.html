@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>노래 입력</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>애창곡 등록</h1>
+    <form action="insert.php" method="post">
+        노래 제목:<br/>
+        <input type="text" name="name" placeholder="노래 제목을 입력하세요"/>
+        <br/>
+        가수 이름:<br/>
+        <input type="text" name="singer" placeholder="가수를 입력하세요"/>
+        <br/>
+        노래방 번호:<br/>
+        <input type="number" name="number" placeholder="노래방 번호를 입력하세요"/>
+        <br/>
+        선호도:<br/>
+        <input type="number" name="favorite" placeholder="선호도를 입력하세요"/>
+        <br/>
+        <br/>
+        <input type="submit" value="노래 추가">
+    </form>
+</body>
+</html>

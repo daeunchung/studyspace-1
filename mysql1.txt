@@ -1,0 +1,55 @@
+create database mysong default character set utf8 collate utf8_general_ci;
+use mysong;
+
+create table singer(
+id int(11) not null auto_increment,
+name varchar(50) not null,
+debut dec(4),
+agency varchar(30),
+
+primary key(id),
+index(name)
+)ENGINE=InnoDB default character set utf8 collate utf8_general_ci;
+
+create table song (
+id int(11) not null auto_increment,
+name varchar(50) not null,
+sid int(11) not null,
+number dec(6),
+favorite int,
+
+primary key(id),
+foreign key(sid) REFERENCES singer(id) ON DELETE CASCADE ON UPDATE CASCADE,
+index(favorite)
+)ENGINE=InnoDB default character set utf8 collate utf8_general_ci;
+
+set names euckr;
+insert into singer values (null, "이은미", 1992, "neobiz");
+insert into singer values (null, "임창정", 1990, "NHmedia");
+insert into song values (null, "애인있어요", 1, 12345, 100);
+insert into song values (null, "소주한잔", 2, 63425, 80);
+
+//insert into singer values (null, "Lee en mi", 1992, "neobiz");
+//insert into singer values (null, "Lim chang jung", 1990, "NHmedia");
+//insert into song values (null, "I have a lover", 1, 12345, 100);
+//insert into song values (null, "One shot soju", 2, 63425, 80);
+
+select * from singer;
+select * from song;
+
+select singer.name as singer, song.name, number, favorite from singer, song where song.sid = singer.id;
+delete from singer where id = 1;
+select * from song;
+
+
+
+
+
+select * from singer, song where song.sid = singer.id;
+select singer.name as singer, song.name, number, favorite from singer, song where song.sid = singer.id;
+select song.name, singer.name as singer, number, favorite from singer, song where song.sid = singer.id;
+
+update singer set id = 10 where id =1;
+select * from singer, song where song.sid = singer.id;
+
+delete from singer where id = 10;

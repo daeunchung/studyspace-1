@@ -1,0 +1,121 @@
+show databases;
+create database gundam;
+use gundam;
+drop table unit;
+drop table pilot;
+drop table control;
+
+create table unit (
+id int(11) not null auto_increment,
+name varchar(50) not null,
+movie varchar(50),
+primary key(id),
+index(name)
+) default character set utf8 COLLATE utf8_unicode_ci;
+
+create table pilot (
+id int(11) not null auto_increment,
+name varchar(50) not null,
+movie varchar(100),
+primary key(id),
+index(name)
+) default character set utf8 collate utf8_general_ci;
+
+create table control (
+uid int(11) not null,
+pid int(11) not null,
+primary key (uid, pid)
+);
+
+-- Warning(Code 1681) : Integer display width is deprecated and will be removed in a future release.
+ALTER TABLE `pilot`
+MODIFY COLUMN `id` int;
+ALTER TABLE `control`
+MODIFY COLUMN `uid` int;
+ALTER TABLE `control`
+MODIFY COLUMN `pid` int;
+
+-- Warning (Code 3719): 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8
+ALTER TABLE `pilot` 
+MODIFY COLUMN `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+CHARACTER SET = utf8mb4, COLLATE = utf8mb4_unicode_ci;
+ALTER TABLE `pilot` 
+MODIFY COLUMN `movie` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+CHARACTER SET = utf8mb4, COLLATE = utf8mb4_unicode_ci;
+
+set names euckr;
+insert into unit values (null, "건담", "A");
+insert into unit values (null, "알렉스", "RX-78-2");
+insert into unit values (null, "건탱크", "RX-78-2");
+insert into unit values (null, "건캐논", "RX-78-2");
+insert into unit values (null, "GM", "RX-78-2");
+insert into unit values (null, "자쿠I", "RX-78-2");
+insert into unit values (null, "자쿠II", "RX-78-2");
+insert into unit values (null, "자쿠II 샤아전용", "RX-78-2");
+insert into unit values (null, "돔", "RX-78-2");
+insert into unit values (null, "릭돔", "RX-78-2");
+insert into unit values (null, "뉴건담", "RX-93");
+
+insert into pilot values (null, "크리스티나 맥켄지", "0080 주머니 속의 전쟁");
+insert into pilot values (null, "아무로 레이", "기동전사 건담");
+
+insert into control values (1,2);
+
+select * from unit;
+
+select * from unit, control, pilot where unit.id = control.uid and pilot.id = control.pid;
+select * from unit join control on (unit.id = control.uid) join pilot on (pilot.id = control.pid);
+
+select unit.name as "unit name", pilot.name as "pilot name", movie from unit, control, pilot where unit.id = control.uid;
+
+create table user (
+id int(11) not null auto_increment,
+email varchar(50) not null,
+password varchar(40) not null,
+primary key(id),
+index(email)
+) default character set utf8 collate utf8_general_ci;
+
+set names euckr;
+
+insert into user values (null, "a@b.com", "a");
+
+alter table user add image varchar(255) default './images/sd.jpg';
+
+drop table user;
+
+create table user (
+id int(11) not null auto_increment,
+email varchar(50) not null,
+password varchar(40) not null,
+image mediumblob,
+primary key(id),
+index(email)
+) default character set utf8 collate utf8_general_ci;
+
+
+drop table review;
+create table review (
+    reviewid int(11) not null auto_increment,
+    userid int(11) not null,
+    time timestamp default current_timestamp,
+    picture mediumblob,
+    memo text default null,
+    primary key(reviewid),
+    foreign key(userid) references user(id) on delete cascade on update cascade,
+    index(time)
+) ENGINE=InnoDB default character set utf8 collate utf8_general_ci;
+
+drop table reply;
+create table reply (
+    replyid int(11) not null auto_increment,
+    reviewid int(11) not null,
+    userid int(11) not null,
+    time timestamp default current_timestamp,
+    memo text not null,
+    primary key(replyid),
+    foreign key(reviewid) references review(reviewid) on delete cascade on update cascade,
+    foreign key(userid) references user(id) on delete cascade on update cascade,
+    index(reviewid),
+    index(time)
+) ENGINE=InnoDB default character set utf8 collate utf8_general_ci;
