@@ -1,0 +1,5 @@
+﻿  CircularQueue.c
+c:\2020_c\datastructure\kkj_circularqueue\circularqueue.c(65): warning C4047: '==': 'int (__cdecl *)()' differs in levels of indirection from 'int'
+c:\2020_c\datastructure\kkj_circularqueue\circularqueue.c(83): warning C4047: '==': 'int (__cdecl *)()' differs in levels of indirection from 'int'
+  KKJ_CircularQueue.vcxproj -> C:\2020_C\DataStructure\Debug\KKJ_CircularQueue.exe
+  KKJ_CircularQueue.vcxproj -> C:\2020_C\DataStructure\Debug\KKJ_CircularQueue.pdb (Full PDB)

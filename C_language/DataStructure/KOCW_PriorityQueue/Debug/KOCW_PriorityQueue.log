@@ -1,0 +1,6 @@
+﻿  PriorityQueue_Heap.c
+c:\2020_c\datastructure\kocw_priorityqueue\priorityqueue_heap.c(39): warning C4033: 'CreateHeap' must return a value
+c:\2020_c\datastructure\kocw_priorityqueue\priorityqueue_heap.c(47): warning C4033: 'CreateHeap' must return a value
+c:\2020_c\datastructure\kocw_priorityqueue\priorityqueue_heap.c(147): warning C4013: 'ResizeHeap' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_priorityqueue\priorityqueue_heap.c(157): error C2371: 'ResizeHeap': redefinition; different basic types
+c:\2020_c\datastructure\kocw_priorityqueue\priorityqueue_heap.c(245): error C2198: 'CreateHeap': too few arguments for call

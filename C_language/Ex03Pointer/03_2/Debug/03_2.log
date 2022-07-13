@@ -1,0 +1,4 @@
+﻿  랜덤학생.c
+c:\2020_c\ex03pointer\03_2\랜덤학생.c(22): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+  03_2.vcxproj -> C:\2020_C\Ex03Pointer\Debug\03_2.exe
+  03_2.vcxproj -> C:\2020_C\Ex03Pointer\Debug\03_2.pdb (Full PDB)

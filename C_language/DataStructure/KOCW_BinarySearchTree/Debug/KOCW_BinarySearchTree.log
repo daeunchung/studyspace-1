@@ -1,0 +1,8 @@
+﻿  BinarySearchTree.c
+c:\2020_c\datastructure\kocw_binarysearchtree\binarysearchtree.c(56): error C2084: function 'BinarySearchTreeNode *Find(BinarySearchTreeNode *,int)' already has a body
+  c:\2020_c\datastructure\kocw_binarysearchtree\binarysearchtree.c(38): note: see previous definition of 'Find'
+c:\2020_c\datastructure\kocw_binarysearchtree\binarysearchtree.c(92): error C2084: function 'BinarySearchTreeNode *FindMin(BinarySearchTreeNode *)' already has a body
+  c:\2020_c\datastructure\kocw_binarysearchtree\binarysearchtree.c(79): note: see previous definition of 'FindMin'
+c:\2020_c\datastructure\kocw_binarysearchtree\binarysearchtree.c(119): error C2084: function 'BinarySearchTreeNode *FindMax(BinarySearchTreeNode *)' already has a body
+  c:\2020_c\datastructure\kocw_binarysearchtree\binarysearchtree.c(107): note: see previous definition of 'FindMax'
+c:\2020_c\datastructure\kocw_binarysearchtree\binarysearchtree.c(142): warning C4033: 'Insert' must return a value

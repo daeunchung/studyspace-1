@@ -1,0 +1,4 @@
+﻿  Tetris.cpp
+c:\2020_c\datastructure\megait_tetris\tetris.cpp(37): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  MEGAIT_Tetris.vcxproj -> C:\2020_C\DataStructure\Debug\MEGAIT_Tetris.exe
+  MEGAIT_Tetris.vcxproj -> C:\2020_C\DataStructure\Debug\MEGAIT_Tetris.pdb (Full PDB)

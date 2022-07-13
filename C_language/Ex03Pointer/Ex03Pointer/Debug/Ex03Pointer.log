@@ -1,0 +1,3 @@
+﻿  ex0102.c
+c:\2020_c\ex03pointer\ex03pointer\ex0102.c(124): error C2374: 'a': redefinition; multiple initialization
+  c:\2020_c\ex03pointer\ex03pointer\ex0102.c(99): note: see declaration of 'a'

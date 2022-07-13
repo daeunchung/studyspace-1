@@ -1,0 +1,4 @@
+﻿  Stack.c
+c:\2020_c\datastructure\gunny_stack\stack.c(42): warning C4716: 'createNode': must return a value
+  Gunny_Stack.vcxproj -> C:\2020_C\DataStructure\Debug\Gunny_Stack.exe
+  Gunny_Stack.vcxproj -> C:\2020_C\DataStructure\Debug\Gunny_Stack.pdb (Full PDB)

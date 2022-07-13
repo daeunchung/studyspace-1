@@ -1,0 +1,70 @@
+﻿  BinaryTree.c
+c:\2020_c\datastructure\kocw_tree\binarytree.c(14): error C2037: left of 'data' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(15): error C2037: left of 'left' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(15): error C2198: 'PreOrder': too few arguments for call
+c:\2020_c\datastructure\kocw_tree\binarytree.c(16): error C2037: left of 'right' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(16): error C2198: 'PreOrder': too few arguments for call
+c:\2020_c\datastructure\kocw_tree\binarytree.c(14): warning C4473: 'printf' : not enough arguments passed for format string
+  c:\2020_c\datastructure\kocw_tree\binarytree.c(14): note: placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+  c:\2020_c\datastructure\kocw_tree\binarytree.c(14): note: the missing variadic argument 1 is required by format string '%d'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(22): warning C4013: 'CreateStack' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_tree\binarytree.c(30): error C2037: left of 'data' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(31): warning C4013: 'Push' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_tree\binarytree.c(33): error C2037: left of 'left' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(36): warning C4013: 'IsEmptyStack' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_tree\binarytree.c(38): warning C4013: 'Pop' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_tree\binarytree.c(38): warning C4047: '=': 'BinaryTreeNode *' differs in levels of indirection from 'int'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(41): error C2037: left of 'right' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(43): warning C4013: 'DeleteStack' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_tree\binarytree.c(22): warning C4047: 'initializing': 'Stack *' differs in levels of indirection from 'int'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(30): warning C4473: 'printf' : not enough arguments passed for format string
+  c:\2020_c\datastructure\kocw_tree\binarytree.c(30): note: placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+  c:\2020_c\datastructure\kocw_tree\binarytree.c(30): note: the missing variadic argument 1 is required by format string '%d'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(53): error C2037: left of 'left' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(53): error C2198: 'InOrder': too few arguments for call
+c:\2020_c\datastructure\kocw_tree\binarytree.c(54): error C2037: left of 'data' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(55): error C2037: left of 'right' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(55): error C2198: 'InOrder': too few arguments for call
+c:\2020_c\datastructure\kocw_tree\binarytree.c(54): warning C4473: 'printf' : not enough arguments passed for format string
+  c:\2020_c\datastructure\kocw_tree\binarytree.c(54): note: placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+  c:\2020_c\datastructure\kocw_tree\binarytree.c(54): note: the missing variadic argument 1 is required by format string '%d'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(65): error C2037: left of 'left' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(69): warning C4047: '=': 'BinaryTreeNode *' differs in levels of indirection from 'int'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(70): error C2037: left of 'data' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(73): error C2037: left of 'right' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(61): warning C4047: 'initializing': 'Stack *' differs in levels of indirection from 'int'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(70): warning C4473: 'printf' : not enough arguments passed for format string
+  c:\2020_c\datastructure\kocw_tree\binarytree.c(70): note: placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+  c:\2020_c\datastructure\kocw_tree\binarytree.c(70): note: the missing variadic argument 1 is required by format string '%d'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(86): error C2037: left of 'left' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(86): error C2198: 'PostOrder': too few arguments for call
+c:\2020_c\datastructure\kocw_tree\binarytree.c(87): error C2037: left of 'right' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(87): error C2198: 'PostOrder': too few arguments for call
+c:\2020_c\datastructure\kocw_tree\binarytree.c(88): error C2037: left of 'data' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(88): warning C4473: 'printf' : not enough arguments passed for format string
+  c:\2020_c\datastructure\kocw_tree\binarytree.c(88): note: placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+  c:\2020_c\datastructure\kocw_tree\binarytree.c(88): note: the missing variadic argument 1 is required by format string '%d'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(98): error C2037: left of 'left' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(106): warning C4013: 'Top' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_tree\binarytree.c(106): error C2223: left of '->right' must point to struct/union
+c:\2020_c\datastructure\kocw_tree\binarytree.c(107): warning C4047: '=': 'BinaryTreeNode *' differs in levels of indirection from 'int'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(108): error C2037: left of 'data' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(109): error C2223: left of '->right' must point to struct/union
+c:\2020_c\datastructure\kocw_tree\binarytree.c(110): error C2223: left of '->data' must point to struct/union
+c:\2020_c\datastructure\kocw_tree\binarytree.c(115): error C2223: left of '->right' must point to struct/union
+c:\2020_c\datastructure\kocw_tree\binarytree.c(94): warning C4047: 'initializing': 'Stack *' differs in levels of indirection from 'int'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(135): warning C4013: 'CreateQueue' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_tree\binarytree.c(139): warning C4013: 'EnQueue' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_tree\binarytree.c(140): warning C4013: 'IsEmptyQueue' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_tree\binarytree.c(141): warning C4013: 'DeQueue' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_tree\binarytree.c(141): warning C4047: '=': 'BinaryTreeNode *' differs in levels of indirection from 'int'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(143): error C2037: left of 'data' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(144): error C2037: left of 'left' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(145): error C2037: left of 'left' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(147): error C2037: left of 'right' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(148): error C2037: left of 'right' specifies undefined struct/union 'BinaryTreeNode'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(151): warning C4013: 'DeleteQueue' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_tree\binarytree.c(135): warning C4047: 'initializing': 'Queue *' differs in levels of indirection from 'int'
+c:\2020_c\datastructure\kocw_tree\binarytree.c(143): warning C4473: 'printf' : not enough arguments passed for format string
+  c:\2020_c\datastructure\kocw_tree\binarytree.c(143): note: placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+  c:\2020_c\datastructure\kocw_tree\binarytree.c(143): note: the missing variadic argument 1 is required by format string '%d'

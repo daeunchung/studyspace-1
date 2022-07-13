@@ -1,0 +1,4 @@
+﻿  중복숫자금지.cpp
+c:\2020_c\ex06structfunction\06_1\중복숫자금지.cpp(52): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  06_1.vcxproj -> C:\2020_C\Ex06StructFunction\Debug\06_1.exe
+  06_1.vcxproj -> C:\2020_C\Ex06StructFunction\Debug\06_1.pdb (Full PDB)

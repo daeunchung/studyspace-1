@@ -1,0 +1,9 @@
+﻿  Source1.c
+c:\2020_c\ex03pointer\07_1\source1.c(35): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+c:\2020_c\ex03pointer\07_1\source1.c(36): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+c:\2020_c\ex03pointer\07_1\source1.c(37): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+c:\2020_c\ex03pointer\07_1\source1.c(38): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+c:\2020_c\ex03pointer\07_1\source1.c(40): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int **'
+c:\2020_c\ex03pointer\07_1\source1.c(41): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int **'
+  07_1.vcxproj -> C:\2020_C\Ex03Pointer\Debug\07_1.exe
+  07_1.vcxproj -> C:\2020_C\Ex03Pointer\Debug\07_1.pdb (Full PDB)

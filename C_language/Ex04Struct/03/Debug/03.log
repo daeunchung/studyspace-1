@@ -1,0 +1,4 @@
+﻿  OMR.cpp
+c:\users\user\documents\visual studio 2015\projects\ex04struct\03\omr.cpp(34): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  03.vcxproj -> C:\Users\user\documents\visual studio 2015\Projects\Ex04Struct\Debug\03.exe
+  03.vcxproj -> C:\Users\user\documents\visual studio 2015\Projects\Ex04Struct\Debug\03.pdb (Full PDB)

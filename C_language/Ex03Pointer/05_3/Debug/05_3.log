@@ -1,0 +1,4 @@
+﻿  ATM.c
+c:\2020_c\ex03pointer\05_3\atm.c(22): warning C4030: first formal parameter list longer than the second list
+  05_3.vcxproj -> C:\2020_C\Ex03Pointer\Debug\05_3.exe
+  05_3.vcxproj -> C:\2020_C\Ex03Pointer\Debug\05_3.pdb (Full PDB)

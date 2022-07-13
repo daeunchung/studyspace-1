@@ -1,0 +1,44 @@
+﻿  Sort.c
+c:\2020_c\datastructure\kocw_sorting\sort.c(27): error C2084: function 'void BubbleSort(int *,int)' already has a body
+  c:\2020_c\datastructure\kocw_sorting\sort.c(12): note: see previous definition of 'BubbleSort'
+c:\2020_c\datastructure\kocw_sorting\sort.c(119): warning C4013: 'Merge' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_sorting\sort.c(124): error C2371: 'Merge': redefinition; different basic types
+c:\2020_c\datastructure\kocw_sorting\sort.c(196): warning C4013: 'Partition' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_sorting\sort.c(215): warning C4013: 'swap' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_sorting\sort.c(297): warning C4013: 'CreateQueue' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_sorting\sort.c(299): warning C4013: 'EnQueue' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_sorting\sort.c(300): error C2037: left of 'Q' specifies undefined struct/union 'Graph'
+c:\2020_c\datastructure\kocw_sorting\sort.c(301): error C2065: 'Distance': undeclared identifier
+c:\2020_c\datastructure\kocw_sorting\sort.c(301): error C2109: subscript requires array or pointer type
+c:\2020_c\datastructure\kocw_sorting\sort.c(302): error C2065: 'Distance': undeclared identifier
+c:\2020_c\datastructure\kocw_sorting\sort.c(302): error C2109: subscript requires array or pointer type
+c:\2020_c\datastructure\kocw_sorting\sort.c(304): warning C4013: 'IsEmptyQueue' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_sorting\sort.c(306): warning C4013: 'DeQueue' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_sorting\sort.c(307): error C2061: syntax error: identifier 'v에'
+c:\2020_c\datastructure\kocw_sorting\sort.c(310): error C2065: 'Path': undeclared identifier
+c:\2020_c\datastructure\kocw_sorting\sort.c(310): error C2109: subscript requires array or pointer type
+c:\2020_c\datastructure\kocw_sorting\sort.c(311): error C2065: 'W': undeclared identifier
+c:\2020_c\datastructure\kocw_sorting\sort.c(297): warning C4047: 'initializing': 'Queue *' differs in levels of indirection from 'int'
+c:\2020_c\datastructure\kocw_sorting\sort.c(314): error C2059: syntax error: '}'
+c:\2020_c\datastructure\kocw_sorting\sort.c(316): error C2059: syntax error: '}'
+c:\2020_c\datastructure\kocw_sorting\sort.c(425): error C2065: 'S': undeclared identifier
+c:\2020_c\datastructure\kocw_sorting\sort.c(425): error C2065: '공집합': undeclared identifier
+c:\2020_c\datastructure\kocw_sorting\sort.c(426): error C2037: left of 'V' specifies undefined struct/union 'Graph'
+c:\2020_c\datastructure\kocw_sorting\sort.c(427): warning C4013: 'MakeSet' undefined; assuming extern returning int
+c:\2020_c\datastructure\kocw_sorting\sort.c(429): error C2065: 'E의': undeclared identifier
+c:\2020_c\datastructure\kocw_sorting\sort.c(429): error C2146: syntax error: missing ';' before identifier '간선들을'
+c:\2020_c\datastructure\kocw_sorting\sort.c(429): error C2065: '간선들을': undeclared identifier
+c:\2020_c\datastructure\kocw_sorting\sort.c(429): error C2146: syntax error: missing ';' before identifier '가중치'
+c:\2020_c\datastructure\kocw_sorting\sort.c(429): error C2065: '가중치': undeclared identifier
+c:\2020_c\datastructure\kocw_sorting\sort.c(429): error C2146: syntax error: missing ';' before identifier 'w가'
+c:\2020_c\datastructure\kocw_sorting\sort.c(429): error C2065: 'w가': undeclared identifier
+c:\2020_c\datastructure\kocw_sorting\sort.c(429): error C2146: syntax error: missing ';' before identifier '증가하는'
+c:\2020_c\datastructure\kocw_sorting\sort.c(429): error C2065: '증가하는': undeclared identifier
+c:\2020_c\datastructure\kocw_sorting\sort.c(429): error C2146: syntax error: missing ';' before identifier '순서로'
+c:\2020_c\datastructure\kocw_sorting\sort.c(429): error C2065: '순서로': undeclared identifier
+c:\2020_c\datastructure\kocw_sorting\sort.c(429): error C2146: syntax error: missing ';' before identifier '정렬한다'
+c:\2020_c\datastructure\kocw_sorting\sort.c(430): error C2065: '정렬한다': undeclared identifier
+c:\2020_c\datastructure\kocw_sorting\sort.c(430): error C2143: syntax error: missing ';' before 'for'
+c:\2020_c\datastructure\kocw_sorting\sort.c(430): error C2061: syntax error: identifier 'E안의'
+c:\2020_c\datastructure\kocw_sorting\sort.c(435): error C2059: syntax error: '}'
+c:\2020_c\datastructure\kocw_sorting\sort.c(437): error C2059: syntax error: '}'

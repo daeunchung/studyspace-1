@@ -1,0 +1,4 @@
+﻿  ex01.c
+c:\2020_c\ex02array\ex02array\ex01.c(100): warning C4013: 'time' undefined; assuming extern returning int
+  Ex02Array.vcxproj -> C:\2020_C\Ex02Array\Debug\Ex02Array.exe
+  Ex02Array.vcxproj -> C:\2020_C\Ex02Array\Debug\Ex02Array.pdb (Full PDB)

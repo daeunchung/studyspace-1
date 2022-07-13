@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\2020_c\ex03pointer\06_2\source.cpp(7): warning C4101: 'arr': unreferenced local variable
+  기본개념2.c
+  06_2.vcxproj -> C:\2020_C\Ex03Pointer\Debug\06_2.exe
+  06_2.vcxproj -> C:\2020_C\Ex03Pointer\Debug\06_2.pdb (Full PDB)

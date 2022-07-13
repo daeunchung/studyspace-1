@@ -1,0 +1,4 @@
+﻿  Source.c
+c:\2020_c\ex03pointer\05_2\source.c(15): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+  05_2.vcxproj -> C:\2020_C\Ex03Pointer\Debug\05_2.exe
+  05_2.vcxproj -> C:\2020_C\Ex03Pointer\Debug\05_2.pdb (Full PDB)

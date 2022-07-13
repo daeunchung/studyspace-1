@@ -1,0 +1,4 @@
+﻿  ex07.c
+c:\2020_c\ex01\ex07\ex07.c(32): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Ex07.vcxproj -> C:\2020_C\Ex01\Debug\Ex07.exe
+  Ex07.vcxproj -> C:\2020_C\Ex01\Debug\Ex07.pdb (Full PDB)
