@@ -1,0 +1,13 @@
+<!--오염된 데이터가 들어왔을때 막는방법
+Cross Site Scripting : html의 속성을 이용한 공격 
+=> JavaScript 에서 sanitizeHtml로 방어했다면
+=> PHP에서 htmlspecialchars로 방어
+-->
+
+<html>
+    <body>
+        &lt;script&gt;
+            alert('hi');
+        &lt;/script&gt;
+    </body>
+</html>
