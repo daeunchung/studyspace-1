@@ -1,0 +1,20 @@
+<!-- form 태그 : 전송하고자 하는 데이터들을 form 태그로 감싸서 전송 가능하다
+폼 안의 사용자가 입력한 각각의 컨트롤 정보 submit 버튼 눌렀을때
+action 속성이 가리키는 서버로 query string 의 형태로 데이터를 전송하는 html의 기능이다
+
+이미 있는 정보를 get 할때는 url로 오픈하게 받아와도 되지만
+사용자가 서버에 데이터를 생성,수정,삭제 할때는 필요한 데이터를 url로 보내면 절대 안된다
+method = "post" : url에 query string 이 보이지 않게 은밀하게 데이터를 서버로 전송
+
+method = "get" 또는 메서드속성이 아예 생략되어있을 경우에 : get 방식
+-->
+
+<form action="http://localhost:3000/create_process" method="post">
+  <p><input type="text" name="title"></p>
+  <p>
+    <textarea name="description"></textarea>
+  </p>
+  <p>
+    <input type="submit">
+  </p>
+</form>
