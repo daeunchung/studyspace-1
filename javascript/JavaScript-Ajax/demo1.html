@@ -1,0 +1,22 @@
+<p>time : <span id="time"></span></p>
+<input type="button" id="execute" value="execute" />
+<script>
+document.querySelector('input').addEventListener('click', function(event){
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', './time.php');
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState === 4 && xhr.status === 200){
+            document.querySelector('#time').innerHTML = xhr.responseText;
+        }
+    }
+    xhr.send();
+});
+</script>
+
+<!--서버랑 통신하는 도중 존재하는 매 단계에서 onreadystatechange라는 EventHandler가 호출되어서 통신의 상태를 확인한다
+    통신의 상태 e.g.) HttpHeader 전송완료, 응답본문 받는중, 응답완료 ...등등
+
+    xhr.readyState === 4 : 모든 통신 완료
+    xhr.status === 200   : 통신 성공
+    document.querySelector('#time').innerHTML = xhr.responseText; : id값이 time element의 innerHTML로 responseText를 넣어주어라
+-->
