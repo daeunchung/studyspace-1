@@ -7,11 +7,17 @@ All Sorts of study source codes
 - C_language  
 C언어 공부
 
+- DB_erd  
+나혼자 Database Entity-Relation Diagram 그려보기
+
 - hello2java  
 
 - javascript  
 -- 10 JavaScript Projects in 1H by Florin Pop  
 -- JQuery and Ajax
+
+- kocw_php_mysql  
+KOCW 웹프로그래밍-데이터베이스 연계교육 동영상_금오공과대학교 오병우교수님 (15년도 2학기) with PHP and MySQL
 
 - myfirstjava  
 
