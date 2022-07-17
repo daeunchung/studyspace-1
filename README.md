@@ -10,6 +10,8 @@ C언어 공부
 - hello2java  
 
 - javascript  
+-- 10 JavaScript Projects in 1H by Florin Pop  
+-- JQuery and Ajax
 
 - myfirstjava  
 
