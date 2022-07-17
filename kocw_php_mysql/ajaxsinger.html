@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Load 15강 XML 실습</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        #press {
+            display: block;
+            border: 2px solid #f00;
+        }
+        #result {
+            display: block;
+            border: 2px dotted #aaa;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>AJAX (Asynchronous JavaScript and XML) 실습</h1>    
+    <div id="press">눌러 보세요</div>
+    <div id="result"><ul><li>없음</li></ul></div>
+
+    <script>
+        $(document).ready(function() {
+            $("#press").click(function(){
+                $.ajax({
+                    url: "listsinger.php",
+                    cache: false,
+                    dataType: "xml",
+                    success: function(xml){
+                        $("#result ul").empty();
+                        $(xml).find("singer").each(function(){
+                            var singer = '<li>' + $(this).text() + '</li>';
+                            $("#result ul").append(singer);
+                        })
+                    },
+                    error: function(request, status, error){
+                        alert(error);
+                    }
+                })
+            });
+        });
+    </script>
+</body>
+</html>

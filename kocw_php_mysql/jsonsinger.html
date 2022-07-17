@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>16강 JSON 실습</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        #press {
+            display: block;
+            border: 2px solid #f00;
+        }
+        #result {
+            display: block;
+            border: 2px dotted #aaa;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>AJAX (Asynchronous JavaScript and XML) 실습</h1>    
+    <div id="press">눌러 보세요</div>
+    <div id="result"><ul><li>없음</li></ul></div>
+
+    <script>
+        $(document).ready(function() {
+            $("#press").click(function(){
+                $.getJSON("selectjson.php", function(json) {
+                    // alert(json.list.length);
+                    $("#result ul").empty();
+                    $.each(json.list, function(){
+                        var name = '<li>' + this["name"] + '</li>';
+                        $("#result ul").append(name);
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
