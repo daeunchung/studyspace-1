@@ -15,6 +15,9 @@ C언어 공부
 
 - myfirstjava  
 
+- nodejs  
+생활코딩 nodejs 및 ejs 모듈 설명 블로그 참고
+
 
 - opentutorials_web1  
 생활코딩 web1 https://opentutorials.org/course/3084
